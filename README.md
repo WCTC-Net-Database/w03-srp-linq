@@ -204,6 +204,8 @@ var names = characters.Select(c => c.Name).ToList();
 - LINQ becomes essential for database queries in Weeks 9-12
 - This class structure previews the separation used in the final project
 
+**Next Week Preview:** In Week 4, you'll create an `IFileHandler` interface that combines CharacterReader and CharacterWriter. This lets you swap CSV for JSON without changing your business logic - the Open/Closed Principle!
+
 ---
 
 ## Tips

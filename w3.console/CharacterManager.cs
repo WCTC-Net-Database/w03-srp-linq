@@ -52,8 +52,8 @@ public class CharacterManager
 
         _output.Write("Enter character name: ");
         var name = _input.ReadLine();
-        _output.Write("Enter character class: ");
-        var charClass = _input.ReadLine();
+        _output.Write("Enter character profession: ");
+        var profession = _input.ReadLine();
         _output.Write("Enter character level: ");
         var level = _input.ReadLine();
 
@@ -73,7 +73,7 @@ public class CharacterManager
 
         var equipment = string.Join("|", equipmentList);
 
-        _output.WriteLine($"{name},{charClass},{level},{equipment}");
+        _output.WriteLine($"{name},{profession},{level},{equipment}");
         _output.WriteLine("Character added (stub).");
     }
 

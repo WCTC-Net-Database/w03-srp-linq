@@ -90,15 +90,15 @@ public class CharacterReader
     /// BONUS: This shows LINQ's Where method for filtering.
     ///
     /// LINQ Example:
-    /// var warriors = characters.Where(c => c.Class == "Fighter").ToList();
+    /// var warriors = characters.Where(c => c.Profession == "Fighter").ToList();
     /// </summary>
     /// <param name="characters">The list of characters to search</param>
-    /// <param name="characterClass">The class to filter by</param>
-    /// <returns>All characters of the specified class</returns>
-    public List<Character> FindByClass(List<Character> characters, string characterClass)
+    /// <param name="profession">The profession to filter by</param>
+    /// <returns>All characters of the specified profession</returns>
+    public List<Character> FindByProfession(List<Character> characters, string profession)
     {
         // TODO: Use LINQ Where to filter characters
-        // return characters.Where(c => c.Class == characterClass).ToList();
+        // return characters.Where(c => c.Profession == profession).ToList();
 
         return new List<Character>(); // Replace with LINQ query
     }

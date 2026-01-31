@@ -54,7 +54,7 @@ Before starting, ensure you have:
 public class Character
 {
     public string Name { get; set; }
-    public string Class { get; set; }
+    public string Profession { get; set; }
     public int Level { get; set; }
     public int HP { get; set; }
     public string[] Equipment { get; set; }
@@ -77,9 +77,9 @@ public Character FindByName(List<Character> characters, string name)
 }
 
 // Where returns all matches as a collection
-public List<Character> FindByClass(List<Character> characters, string cls)
+public List<Character> FindByProfession(List<Character> characters, string profession)
 {
-    return characters.Where(c => c.Class == cls).ToList();
+    return characters.Where(c => c.Profession == profession).ToList();
 }
 ```
 
@@ -126,8 +126,8 @@ dotnet add package Spectre.Console
 
 Or use string interpolation with alignment:
 ```csharp
-Console.WriteLine($"{"Name",-15} {"Class",-10} {"Level",5}");
-Console.WriteLine($"{character.Name,-15} {character.Class,-10} {character.Level,5}");
+Console.WriteLine($"{"Name",-15} {"Profession",-10} {"Level",5}");
+Console.WriteLine($"{character.Name,-15} {character.Profession,-10} {character.Level,5}");
 ```
 
 ---
@@ -172,7 +172,7 @@ w3.console/
 var hero = characters.FirstOrDefault(c => c.Name == "Hero");
 
 // Filter to multiple matches
-var warriors = characters.Where(c => c.Class == "Warrior").ToList();
+var warriors = characters.Where(c => c.Profession == "Warrior").ToList();
 
 // Sort by property
 var sorted = characters.OrderBy(c => c.Level).ToList();

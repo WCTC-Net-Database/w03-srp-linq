@@ -87,7 +87,7 @@ public class CharacterWriter
 
         // Example (without quote handling):
         // string equipment = string.Join("|", character.Equipment);
-        // return $"{character.Name},{character.Class},{character.Level},{character.HP},{equipment}";
+        // return $"{character.Name},{character.Profession},{character.Level},{character.HP},{equipment}";
 
         return string.Empty;
     }

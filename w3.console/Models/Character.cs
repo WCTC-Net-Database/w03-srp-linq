@@ -18,9 +18,9 @@ public class Character
     public string Name { get; set; }
 
     /// <summary>
-    /// The character's class/profession (Fighter, Wizard, Rogue, etc.)
+    /// The character's profession (Fighter, Wizard, Rogue, etc.)
     /// </summary>
-    public string Class { get; set; }
+    public string Profession { get; set; }
 
     /// <summary>
     /// The character's current level (starts at 1)
@@ -50,10 +50,10 @@ public class Character
     /// <summary>
     /// Convenience constructor to create a fully-initialized character
     /// </summary>
-    public Character(string name, string characterClass, int level, int hp, string[] equipment)
+    public Character(string name, string profession, int level, int hp, string[] equipment)
     {
         Name = name;
-        Class = characterClass;
+        Profession = profession;
         Level = level;
         HP = hp;
         Equipment = equipment ?? Array.Empty<string>();
@@ -68,6 +68,6 @@ public class Character
         string equipmentList = Equipment.Length > 0
             ? string.Join(", ", Equipment)
             : "none";
-        return $"{Name} the {Class} (Level {Level}, {HP} HP) - Equipment: {equipmentList}";
+        return $"{Name} the {Profession} (Level {Level}, {HP} HP) - Equipment: {equipmentList}";
     }
 }

@@ -1,6 +1,6 @@
-using W3_assignment_template.Models;
+using W03.Models;
 
-namespace W3_assignment_template.Services;
+namespace W03.Services;
 
 /// <summary>
 /// CharacterWriter - Responsible for ONE thing: WRITING character data.

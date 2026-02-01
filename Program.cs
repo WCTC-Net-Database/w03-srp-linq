@@ -1,4 +1,4 @@
-namespace W3_assignment_template;
+namespace W03;
 
 class Program
 {

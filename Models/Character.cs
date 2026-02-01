@@ -1,4 +1,4 @@
-namespace W3_assignment_template.Models;
+namespace W03.Models;
 
 /// <summary>
 /// Represents an RPG character with their attributes and equipment.

@@ -1,4 +1,4 @@
-namespace W3_assignment_template;
+namespace W03;
 
 /// <summary>
 /// CharacterManager - THE PROBLEM (SRP Violation!)

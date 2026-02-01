@@ -1,4 +1,4 @@
-namespace w3.console;
+namespace W3_assignment_template;
 
 class Program
 {

@@ -1,6 +1,6 @@
-using w3.console.Models;
+using W3_assignment_template.Models;
 
-namespace w3.console.Services;
+namespace W3_assignment_template.Services;
 
 /// <summary>
 /// CharacterReader - Responsible for ONE thing: READING character data.
